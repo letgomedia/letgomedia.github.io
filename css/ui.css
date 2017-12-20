@@ -1,7 +1,39 @@
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
 html {
-  background-color: #000000;
-  background-image: url(images/letgomedia-transparent-logo.png);
+  background-color: #000;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100%;
+}
+a, a:visited, a:hover, a:active {
+  color: #fff;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -100px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 100px;
+}
+.site-footer {
+  background: #000;
+  color: #fff;
+  opacity: .5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.margin-10 {
+  margin: 10px;
 }
